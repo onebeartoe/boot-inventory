@@ -1,0 +1,31 @@
+
+Feature 1: Inventory Management
+
+    Story 1; As an inventory manager, I can view the items in the inventory and 
+    Story 2: As an inventory manager, I am able to add items to the inventory so that store inventory can be managed to support management with alerts for when new inventory should be re-ordered.
+    Story 3: As an inventory manager, I am able to remove items from the inventory so that store inventory can be managed to support management with alerts for when new inventory should be re-ordered.
+    Story 4: As an inventory manager, I am able to update items the inventory so that store inventory can be managed to support management with alerts for when new inventory should be re-ordered
+
+
+Feature 2: Customer Cart Management
+
+    As a customer, I can add one or more of any given item to my cart to support future functionality of reviewing my cart prior to completing my purchase
+    As a customer, I can review my cart and see a total of cost of the items in my cart
+ 
+
+**REQUREMENTS**
+
+    Use Spring Boot to create a REST API to support functionality above
+    Use whatever you are comfortable with for the front end
+    Use an H2 in memory database to store data while the app is running. Data persistence is not important for this challenge
+    Please commit all source code to public github repository(ies) and include the url to the repo in your response.
+ 
+
+**Main Evaluation criteria**
+
+    How are the solutions files organized?
+    How are the entities setup and how are relationships managed?
+    What unit tests are included and how are those tests organized?
+    What architectural pattern is used?
+    Is the repository setup for easy build/deploy to local environment and remote server?
+    How is the “front-end” source organized
