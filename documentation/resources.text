@@ -4,3 +4,11 @@ Basic setup for controllers, automated testing, and built-in production services
     https://spring.io/guides/gs/spring-boot/
     
     
+
+Setup Spring JPA and configure more rest controllers.
+
+    https://spring.io/guides/tutorials/rest/
+
+    https://github.com/spring-guides/tut-rest
+
+    This guide also discusses using Spring Hateos for RESTful service links.
