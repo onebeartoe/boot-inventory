@@ -1,4 +1,4 @@
-package com.payroll;
+package com.baeldung.bootcustomfilters.controller;
 
 class EmployeeNotFoundException extends RuntimeException {
 
