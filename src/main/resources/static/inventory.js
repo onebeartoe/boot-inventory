@@ -24,6 +24,7 @@ function refreshInventory()
             e.innerHTML = productHtml;
         }
     };
+    
     xmlhttp.open("GET", "/api/inventory", true);
     xmlhttp.send();    
 }
@@ -43,8 +44,12 @@ function submitNewProduct()
             refreshInventory();
         }
     };
+    
+    var nameField = document.getElementById("newProductName");
+    
+    var name = nameField.value;
         
-    var data = JSON.stringify({"name": "Tom", "role": "Underground Resistence"});    
+    var data = JSON.stringify({"name": name, "role": "Underground Resistence"});    
     
     xmlhttp.open("POST", "/api/inventory", true);
     
