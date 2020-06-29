@@ -11,6 +11,21 @@
     margin-top: 2%;
 }
 
+.navigation
+{
+    margin-left: auto;
+    margin-right: auto;
+    
+    text-align: right;
+    
+    width: 80%;
+}
+
+.newProduct
+{
+    margin-bottom: 3%;
+}
+
 .products
 {
     width: 80%;
