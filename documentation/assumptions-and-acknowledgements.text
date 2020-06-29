@@ -5,7 +5,7 @@ This project was created with the following assumptions:
 
     An enterprise grade service for authentication and authorization is a future requirement; maybe JAAS.
 
-    The inventory administraion API should be behind some authentication and authorization mechanism.
+    The inventory management API should be behind some authentication and authorization mechanism.
 
 The following acknowledgements were made during the creation of this project.
 
