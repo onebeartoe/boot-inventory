@@ -1,19 +1,23 @@
 
 package com.baeldung.bootcustomfilters.controller;
 
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 
 /**
  * This class sends an HTML UI for the products listing page.
  */
-@RestController
-public class ProductListingController
+@Controller
+public class ProductsController
 {
-    @RequestMapping("/products")
-    public String index() 
+    @GetMapping("/products")
+    public String products(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model)  
     {
-        return "Product Listing";
+        model.addAttribute("name", name);
+        return "products";        
+//        return "Product Listing";
     }
 }
