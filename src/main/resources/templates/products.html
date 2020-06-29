@@ -1,6 +1,38 @@
-<html>
-<body>
-<h1>Welcome Home</h1>
-<p><strong>Success!</strong> It is working as we expected.</p>
-</body>
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+    <head> 
+        <title>Getting Started: Serving Web Content</title> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="/layout.css" />
+    	<link rel="stylesheet" href="/style.css" />
+    </head>
+
+    <body>
+        <script type="text/javascript" 
+                src="/products.js"></script>
+
+        <script type="text/javascript" >
+            refreshProducts();
+        </script>        
+                
+        <h1>Product Listing</h1>
+        
+        
+        
+        
+        
+        <br/>        
+        <br/>
+        
+        
+        
+        <div id="products" class="products">
+            
+        </div>
+        
+        <div id="logs" class="logs">
+            
+        </div>          
+    </body>
 </html>
