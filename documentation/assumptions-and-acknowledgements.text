@@ -13,4 +13,7 @@ The following acknowledgements were made during the creation of this project.
 
     The server side response messages should not appear on the UI, but are in this application to aid with development.
 
+    While an initial integration test exists, the Maven Failsafe plugin needs configuring to automate running the test(s) at build time.
+
     The UI for products and inventory could use some more styling.
+    
