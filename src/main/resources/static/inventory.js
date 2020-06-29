@@ -43,9 +43,7 @@ function submitNewProduct()
             refreshInventory();
         }
     };
-    
-//    var queryString = "?" + "name=Tom" + '&' + "role=Underground Resistence";
-    
+        
     var data = JSON.stringify({"name": "Tom", "role": "Underground Resistence"});    
     
     xmlhttp.open("POST", "/api/inventory", true);
@@ -53,5 +51,4 @@ function submitNewProduct()
     xmlhttp.setRequestHeader("Content-Type", "application/json");
 
     xmlhttp.send(data);    
-//    xmlhttp.send(queryString);    
 }
