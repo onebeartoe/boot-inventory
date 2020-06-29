@@ -25,13 +25,19 @@
         
         <h1>Inventory</h1>
         
-        <div id="newProduct" class="products">
+        <div id="newProduct" class="products newProduct">
             New Product
             
             <br>
             <br>
             
-            <input type="text">
+            <label for="newProductName">Name</label>
+            
+            <input id="newProductName" type="text">
+            
+            <label for="newProductQuantity">Quantity</label>
+            
+            <input id="newProductQuantity" type="text">
             
             <button onclick="submitNewProduct()" >Add</button>
         </div>

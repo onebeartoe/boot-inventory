@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/inventory")
-class InventoryController {
-
+class InventoryController 
+{
 	private final ProductRepository repository;
 
 	InventoryController(ProductRepository repository) {
@@ -29,7 +29,7 @@ class InventoryController {
 		return repository.findAll();
 	}
 
-	@PostMapping("/api/inventory")
+	@PostMapping("")
 	Product newProduct(@RequestBody Product newProduct) {
 		return repository.save(newProduct);
 	}
