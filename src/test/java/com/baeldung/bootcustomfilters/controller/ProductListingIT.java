@@ -37,8 +37,8 @@ public class ProductListingIT
         ResponseEntity<String> response = template.getForEntity(base.toString(),
                 String.class);
         
+        String body = response.getBody();
         
-        
-        assertThat(response.getBody()).isEqualTo("Product Listing");
+        assertThat(body).contains("Product Listing");
     }
 }
