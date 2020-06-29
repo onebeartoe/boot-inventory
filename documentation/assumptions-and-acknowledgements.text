@@ -1,0 +1,16 @@
+
+This project was created with the following assumptions:
+
+    Configuration for HTTPS is a future requirement.
+
+    An enterprise grade service for authentication and authorization is a future requirement; maybe JAAS.
+
+
+The following acknowledgements were made during the creation of this project.
+
+    
+
+    The UI for products and inventory could use some more styling.
+
+    Some service is required to share HTTP session data between instances (scaling) of the application.
+
