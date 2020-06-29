@@ -24,7 +24,7 @@ public class FilterConfig
 
         registrationBean.setFilter(new RequestResponseLoggingFilter());
 
-        registrationBean.addUrlPatterns("/users/*");
+        registrationBean.addUrlPatterns("/api/inventory/*");
 
         return registrationBean;
     }
