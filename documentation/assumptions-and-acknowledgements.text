@@ -17,6 +17,8 @@ The following acknowledgements were made during the creation of this project.
 
     The UI for products and inventory could use some more styling.
 
+    The spring-boot-maven-plugin needs configuring to create an executable JAR with dependencies.
+
     Some automation for the build is necessary for continuous integration
 
         The Travis-CI build was not available for some reason, even with a valid .travis.yml file.
