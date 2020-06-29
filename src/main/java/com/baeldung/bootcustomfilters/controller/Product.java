@@ -11,14 +11,14 @@ class Product {
 
 	private @Id @GeneratedValue Long id;
 	private String name;
-	private String role;
+	private String quantity;
 
 	Product() {}
 
-	Product(String name, String role) {
+	Product(String name, String quantity) {
 
 		this.name = name;
-		this.role = role;
+		this.quantity = quantity;
 	}
 
 	public Long getId() {
@@ -29,8 +29,8 @@ class Product {
 		return this.name;
 	}
 
-	public String getRole() {
-		return this.role;
+	public String getQuantity() {
+		return this.quantity;
 	}
 
 	public void setId(Long id) {
@@ -41,8 +41,8 @@ class Product {
 		this.name = name;
 	}
 
-	public void setRole(String role) {
-		this.role = role;
+	public void setQuantity(String quantity) {
+		this.quantity = quantity;
 	}
 
 	@Override
@@ -54,16 +54,16 @@ class Product {
 			return false;
 		Product inventory = (Product) o;
 		return Objects.equals(this.id, inventory.id) && Objects.equals(this.name, inventory.name)
-				&& Objects.equals(this.role, inventory.role);
+				&& Objects.equals(this.quantity, inventory.quantity);
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(this.id, this.name, this.role);
+		return Objects.hash(this.id, this.name, this.quantity);
 	}
 
 	@Override
 	public String toString() {
-		return "Product{" + "id=" + this.id + ", name='" + this.name + '\'' + ", role='" + this.role + '\'' + '}';
+		return "Product{" + "id=" + this.id + ", name='" + this.name + '\'' + ", quantity='" + this.quantity + '\'' + '}';
 	}
 }

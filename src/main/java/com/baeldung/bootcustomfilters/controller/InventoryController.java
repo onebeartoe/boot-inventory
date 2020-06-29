@@ -48,7 +48,7 @@ class InventoryController
 		return repository.findById(id)
 			.map(product -> {
 				product.setName(newProduct.getName());
-				product.setRole(newProduct.getRole());
+				product.setQuantity(newProduct.getQuantity());
 				return repository.save(product);
 			})
 			.orElseGet(() -> {

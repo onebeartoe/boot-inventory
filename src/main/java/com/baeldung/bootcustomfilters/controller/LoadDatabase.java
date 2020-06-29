@@ -17,8 +17,11 @@ class LoadDatabase {
     {
         return args -> 
         {
-            log.info("Preloading " + repository.save(new Product("Bilbo Baggins", "burglar")));
-            log.info("Preloading " + repository.save(new Product("Frodo Baggins", "thief")));
+            log.info("Preloading " + repository.save(new Product("Long Boot", "5")));
+            log.info("Preloading " + repository.save(new Product("Dress Boot", "2")));
+            log.info("Preloading " + repository.save(new Product("Cowboy Boot", "9")));
+            log.info("Preloading " + repository.save(new Product("Spring Boot", "12")));
+            log.info("Preloading " + repository.save(new Product("Das Boot", "12")));
         };
     }
 }

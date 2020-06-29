@@ -14,7 +14,7 @@ function refreshInventory()
             
             productArray.forEach(element => 
             {
-                productHtml += element.name + ":" + element.role;
+                productHtml += element.name + ":" + element.quantity;
                 
                 productHtml += "<br>"
             });
@@ -49,7 +49,7 @@ function submitNewProduct()
     
     var name = nameField.value;
         
-    var data = JSON.stringify({"name": name, "role": "Underground Resistence"});    
+    var data = JSON.stringify({"name": name, "quantity": "4"});    
     
     xmlhttp.open("POST", "/api/inventory", true);
     

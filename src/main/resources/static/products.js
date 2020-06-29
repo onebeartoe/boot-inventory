@@ -14,7 +14,7 @@ function refreshProducts()
             
             productArray.forEach(element => 
             {
-                productHtml += element.name + ":" + element.role;
+                productHtml += element.name + ":" + element.quantity;
                 
                 productHtml += "<br>"
             });
