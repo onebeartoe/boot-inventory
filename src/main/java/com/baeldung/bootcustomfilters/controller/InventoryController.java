@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/inventory")
+@RequestMapping("/api/inventory")
 class InventoryController {
 
 	private final ProductRepository repository;
@@ -29,20 +29,20 @@ class InventoryController {
 		return repository.findAll();
 	}
 
-	@PostMapping("/inventory")
+	@PostMapping("/api/inventory")
 	Product newProduct(@RequestBody Product newProduct) {
 		return repository.save(newProduct);
 	}
 
 	// Single item
-	@GetMapping("/inventory/{id}")
+	@GetMapping("/api/inventory/{id}")
 	Product one(@PathVariable Long id) {
 		
 		return repository.findById(id)
 			.orElseThrow(() -> new ProductNotFoundException(id));
 	}
 
-	@PutMapping("/inventory/{id}")
+	@PutMapping("/api/inventory/{id}")
 	Product replaceProduct(@RequestBody Product newProduct, @PathVariable Long id) {
 		
 		return repository.findById(id)
@@ -57,7 +57,7 @@ class InventoryController {
 			});
 	}
 
-	@DeleteMapping("/inventory/{id}")
+	@DeleteMapping("/api/inventory/{id}")
 	void deleteProduct(@PathVariable Long id) {
 		repository.deleteById(id);
 	}

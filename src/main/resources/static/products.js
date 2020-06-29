@@ -35,6 +35,6 @@ function refreshProducts()
             e.innerHTML = productHtml;
         }
     };
-    xmlhttp.open("GET", "/inventory", true);
+    xmlhttp.open("GET", "/api/inventory", true);
     xmlhttp.send();    
 }
