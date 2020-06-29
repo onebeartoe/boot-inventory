@@ -1,4 +1,4 @@
-package com.baeldung.bootcustomfilters;
+package org.onebeartoe.boot.inventory;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

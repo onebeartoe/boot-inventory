@@ -1,6 +1,5 @@
-package com.baeldung.bootcustomfilters;
+package org.onebeartoe.boot.inventory;
 
-import com.baeldung.bootcustomfilters.filters.RequestResponseLoggingFilter;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Configuration;
 

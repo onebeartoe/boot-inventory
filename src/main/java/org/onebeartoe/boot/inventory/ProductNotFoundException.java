@@ -1,4 +1,4 @@
-package com.baeldung.bootcustomfilters.controller;
+package org.onebeartoe.boot.inventory;
 
 class ProductNotFoundException extends RuntimeException {
 

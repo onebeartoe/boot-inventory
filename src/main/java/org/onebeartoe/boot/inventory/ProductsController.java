@@ -1,5 +1,5 @@
 
-package com.baeldung.bootcustomfilters.controller;
+package org.onebeartoe.boot.inventory;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,12 +11,13 @@ import org.springframework.web.bind.annotation.RequestParam;
  * This class sends an HTML UI for the products listing page.
  */
 @Controller
-public class InventoryAdminController
+public class ProductsController
 {
-    @GetMapping("/inventory")
+    @GetMapping("/products")
     public String products(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model)  
     {
         model.addAttribute("name", name);
-        return "inventory";        
+        return "products";        
+//        return "Product Listing";
     }
 }

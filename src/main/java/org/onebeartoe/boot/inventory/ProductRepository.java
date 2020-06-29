@@ -1,5 +1,5 @@
 
-package com.baeldung.bootcustomfilters.controller;
+package org.onebeartoe.boot.inventory;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
