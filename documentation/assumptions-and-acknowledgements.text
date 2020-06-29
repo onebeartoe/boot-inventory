@@ -16,4 +16,19 @@ The following acknowledgements were made during the creation of this project.
     While an initial integration test exists, the Maven Failsafe plugin needs configuring to automate running the test(s) at build time.
 
     The UI for products and inventory could use some more styling.
-    
+
+    Some automation for the build is necessary for continuous integration
+
+        The Travis-CI build was not available for some reason, even with a valid .travis.yml file.
+
+            but here are some other projects that make use of continuous integration
+
+                https://travis-ci.org/github/onebeartoe
+
+    Static source code analysis is usually part of the software development lifecycle.
+
+        With out travis-ci, the Sonarqube scans were not available, 
+
+            but here some other projects that make use of static source code analysis:
+
+                https://sonarcloud.io/organizations/onebeartoe-github/projects
