@@ -1,0 +1,23 @@
+
+.logs
+{
+    height: 40%;
+    
+    width: 80%;
+    
+    margin-left: auto;
+    margin-right: auto;    
+    
+    margin-top: 2%;
+}
+
+.products
+{
+    width: 80%;
+    
+    border-style: dashed;
+    border-width: 1px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
