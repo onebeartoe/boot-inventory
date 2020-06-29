@@ -5,12 +5,12 @@ This project was created with the following assumptions:
 
     An enterprise grade service for authentication and authorization is a future requirement; maybe JAAS.
 
+    The inventory administraion API should be behind some authentication and authorization mechanism.
 
 The following acknowledgements were made during the creation of this project.
 
-    
-
-    The UI for products and inventory could use some more styling.
-
     Some service is required to share HTTP session data between instances (scaling) of the application.
 
+    The server side response messages should not appear on the UI, but are in this application to aid with development.
+
+    The UI for products and inventory could use some more styling.
