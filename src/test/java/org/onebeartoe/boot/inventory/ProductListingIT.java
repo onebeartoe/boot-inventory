@@ -1,5 +1,5 @@
 
-package com.baeldung.bootcustomfilters.controller;
+package org.onebeartoe.boot.inventory;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -32,7 +32,7 @@ public class ProductListingIT
     }
 
     @Test
-    public void getHello() throws Exception 
+    public void getListing() throws Exception 
     {
         ResponseEntity<String> response = template.getForEntity(base.toString(),
                 String.class);
