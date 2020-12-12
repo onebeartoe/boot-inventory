@@ -28,8 +28,9 @@ class InventoryController
     }
 
     @PostMapping("")
-    Product newProduct(@RequestBody Product newProduct) {
-            return repository.save(newProduct);
+    Product newProduct(@RequestBody Product newProduct) 
+    {
+        return repository.save(newProduct);
     }
 
     // Single item
