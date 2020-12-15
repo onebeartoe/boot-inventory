@@ -27,6 +27,8 @@
 
     <name>onebeartoe-inventory-boot</name>
 
+    <organization>onebeartoe.org</organization>
+
     <packaging>jar</packaging> 
     
     <dependencies>
