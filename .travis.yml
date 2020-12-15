@@ -7,7 +7,7 @@ addons:
     organization: $SONAR_ORGNIZATION
     token: $SONAR_TOKEN
 jdk:
-  - oraclejdk9
+  - oraclejdk11
 script:
   - mvn --quiet clean org.jacoco:jacoco-maven-plugin:prepare-agent verify sonar:sonar
 cache:
